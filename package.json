@@ -1,0 +1,51 @@
+{
+    "name": "indent-report",
+    "publisher": "ogomez92",
+    "displayName": "Indent Report",
+    "description": "plays sounds depending on your indent level in the active selection",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.40.0"
+    },
+    "homepage": "https://oriolgomez.com",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ogomez92/indent_reporter_vscode"
+    },
+    "keywords": [
+        "sound",
+        "accessibility"
+    ],
+    "icon": "icon.png",
+    "license": "MIT",
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "*"
+    ],
+    "main": "./out/extension.js",
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile",
+        "test": "node ./out/test/runTest.js"
+    },
+    "devDependencies": {
+        "@types/glob": "^7.1.1",
+        "@types/lodash.debounce": "^4.0.6",
+        "@types/mocha": "^5.2.7",
+        "@types/node": "^12.11.7",
+        "@types/vscode": "^1.40.0",
+        "glob": "^7.1.5",
+        "mocha": "^6.2.2",
+        "tslint": "^5.20.0",
+        "typescript": "^3.6.4",
+        "vscode-test": "^1.2.2"
+    },
+    "dependencies": {
+        "lodash.debounce": "^4.0.8",
+        "play-sound": "^1.1.3"
+    }
+}
